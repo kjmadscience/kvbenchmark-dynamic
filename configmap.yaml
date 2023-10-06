@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kvbenchmark-config
+data:
+  SERVERS: mydb-voltdb-cluster-0.mydb-voltdb-cluster-internal.default.svc.cluster.local
+  DURATION: "120"
+  POOLSIZE: "100000"
+  TPS: "500"
